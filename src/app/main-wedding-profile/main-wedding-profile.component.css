@@ -1,0 +1,226 @@
+
+.main-heading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: normal normal normal 90px 'eb garamond',serif;
+  color:#f7ede8;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);;
+}
+.main-page-image-container{
+    height:600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.main-heading-image{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }  
+
+  .parallax-1{
+  
+    background-image: url("https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/8tupf-23D5YQJWP0Q-Full-Image_GalleryBackground-en-US-1463161935983._RI_.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  .parallax-2{
+  
+    background-image: url("https://the-maharani-diaries-zxpo8io6akeffozy.netdna-ssl.com/media/2019/08/14034105/A-Traditional-Sri-Lankan-Garden-Poruwa-Wedding-Ceremony_Maya-and-Rev_The-Maharani-Diaries_29.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .font-2{
+    font:normal normal normal 40px/1.4em 'eb garamond',serif;
+    color:#2F2E2E;
+  }
+.img-collage {
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.6s ease-in-out;
+ 
+}
+.img-collage:hover {
+    transform: scale(1.05);
+  }
+
+  
+.collage-style {
+  overflow: hidden;            /* clip the excess when child gets bigger than parent */
+}
+.collage-style img {
+  display: block;
+  transition: transform .4s;   /* smoother zoom */
+  
+}
+.collage-style:hover img {
+  transform: scale(1.3);
+  transform-origin: 50% 50%;
+  opacity: 0.5;
+}
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem; 
+  }
+  
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+  }
+  
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
+  .gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
+  .gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
+  
+  .gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+  
+  .gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+  }
+  
+  .gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+  }
+
+  .sidebar {
+    padding: 15px;
+    background:transparent;
+    z-index: 100000;
+    background:linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  }
+
+  .sidebar {
+    width: 80px;
+    height: auto;
+  }
+
+  .sidebar {
+    position: fixed;
+    top:20%;
+  }
+
+  .spec-btn{
+    color:#2196f3;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .spec-btn:hover{
+    color:#255784;
+    background:#2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+  }
+
+  .spec-btn span{
+    position: fixed;
+    display: block;
+  }
+
+  .spec-btn span:nth-child(1){
+    top:0;
+    left:-100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+  }
+
+  .spec-btn:hover span:nth-child(1){
+    left:100%;
+    transition: 1s;
+  }
+
+  .spec-btn span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+  }
+
+  .spec-btn:hover span:nth-child(3){
+    right:100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+
+  .spec-btn span:nth-child(2){
+    top:-100%;
+    left:49%;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+  }
+
+  .spec-btn:hover span:nth-child(2){
+    top:100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+
+  .spec-btn span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+  }
+
+  .spec-btn:hover span:nth-child(4){
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }

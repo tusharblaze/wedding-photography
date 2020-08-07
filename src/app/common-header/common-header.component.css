@@ -1,0 +1,10 @@
+.btn{
+    transition: transform .6s .25s ease-out;
+}
+
+.btn:hover{
+    background: #e7c6ee;
+    border:1px solid #a205d1;
+    transform:scale(.8);
+}
+
